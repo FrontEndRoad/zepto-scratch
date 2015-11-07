@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script src="js/viewport.js"></script>
+	<title>HTML5移动端刮刮卡效果</title>
+	<style>
+		html,body { width: 100%; height: 100%; overflow: hidden; }
+		body { margin: 0; background: #fff; }
+		.wrap { width: 100%; height: 100%; background: url(images/bg.jpg) no-repeat center top; }
+			.scratch { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 3; }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<canvas class="scratch" id="scratch" width="640" height="1136"></canvas>
+	</div>
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/scratch.js"></script>
+</body>
+</html>
